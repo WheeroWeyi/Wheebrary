@@ -17,8 +17,8 @@ namespace Wheebrary.Math
             if (t2 == null) t2 = new WheePoint(0, 0);
             SetPoints(p, t1, t2);
         }
-        public WheeBezier(Point p, Point t1, Point t2)
-            : this(WheePoint.Parse(p), WheePoint.Parse(t1), WheePoint.Parse(t2)) { }
+        //public WheeBezier(Point p, Point t1, Point t2)
+        //    : this(WheePoint.Parse(p), WheePoint.Parse(t1), WheePoint.Parse(t2)) { }
 
         public void SetPoints(WheePoint p, WheePoint t1, WheePoint t2)
         {
@@ -32,11 +32,11 @@ namespace Wheebrary.Math
             P = p;
         }
 
-        public void SetP(PointF p)
+        /*public void SetP(PointF p)
         {
             SetP(new WheePoint(p.X, p.Y));
-        }
-
+        }*/
+        
         public void SetT1(WheePoint t1)
         {
             T1 = t1;
